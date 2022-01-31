@@ -2,7 +2,8 @@
 //  glowing_enigmaUITests.swift
 //  glowing-enigmaUITests
 //
-//  Created by goldorak on 31/01/2022.
+//  Created by Antonin Boulnois on 31/01/2022.
+//  Copyright © 2022 Antonin Boulnois. All rights reserved.
 //
 
 import XCTest
@@ -32,9 +33,9 @@ class glowing_enigmaUITests: XCTestCase {
     }
 
     func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
             // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
+            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
                 XCUIApplication().launch()
             }
         }

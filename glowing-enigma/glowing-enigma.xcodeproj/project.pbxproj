@@ -15,6 +15,9 @@
 		33C3D96627A822BC00CA8F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C3D96427A822BC00CA8F26 /* LaunchScreen.storyboard */; };
 		33C3D97127A822BD00CA8F26 /* glowing_enigmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3D97027A822BD00CA8F26 /* glowing_enigmaTests.swift */; };
 		33C3D97C27A822BD00CA8F26 /* glowing_enigmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3D97B27A822BD00CA8F26 /* glowing_enigmaUITests.swift */; };
+		33C3D98B27A82A6F00CA8F26 /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3D98A27A82A6F00CA8F26 /* DataStructure.swift */; };
+		33C3D98D27A82CEC00CA8F26 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3D98C27A82CEC00CA8F26 /* API.swift */; };
+		33C3D98F27A8331300CA8F26 /* TestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3D98E27A8331300CA8F26 /* TestAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		33C3D97727A822BD00CA8F26 /* glowing-enigmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "glowing-enigmaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C3D97B27A822BD00CA8F26 /* glowing_enigmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glowing_enigmaUITests.swift; sourceTree = "<group>"; };
 		33C3D97D27A822BD00CA8F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33C3D98A27A82A6F00CA8F26 /* DataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
+		33C3D98C27A82CEC00CA8F26 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		33C3D98E27A8331300CA8F26 /* TestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		33C3D94D27A822B200CA8F26 = {
 			isa = PBXGroup;
 			children = (
+				33C3D98927A82A2500CA8F26 /* Model */,
 				33C3D95827A822B200CA8F26 /* glowing-enigma */,
 				33C3D96F27A822BD00CA8F26 /* glowing-enigmaTests */,
 				33C3D97A27A822BD00CA8F26 /* glowing-enigmaUITests */,
@@ -123,6 +130,7 @@
 			children = (
 				33C3D97027A822BD00CA8F26 /* glowing_enigmaTests.swift */,
 				33C3D97227A822BD00CA8F26 /* Info.plist */,
+				33C3D98E27A8331300CA8F26 /* TestAPI.swift */,
 			);
 			path = "glowing-enigmaTests";
 			sourceTree = "<group>";
@@ -134,6 +142,15 @@
 				33C3D97D27A822BD00CA8F26 /* Info.plist */,
 			);
 			path = "glowing-enigmaUITests";
+			sourceTree = "<group>";
+		};
+		33C3D98927A82A2500CA8F26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33C3D98A27A82A6F00CA8F26 /* DataStructure.swift */,
+				33C3D98C27A82CEC00CA8F26 /* API.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				33C3D95A27A822B200CA8F26 /* AppDelegate.swift in Sources */,
+				33C3D98B27A82A6F00CA8F26 /* DataStructure.swift in Sources */,
 				33C3D95C27A822B200CA8F26 /* SceneDelegate.swift in Sources */,
 				33C3D95E27A822B200CA8F26 /* ContentView.swift in Sources */,
+				33C3D98D27A82CEC00CA8F26 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C3D98F27A8331300CA8F26 /* TestAPI.swift in Sources */,
 				33C3D97127A822BD00CA8F26 /* glowing_enigmaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

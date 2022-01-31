@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F88F56A527A81FF900FD4CFC /* glowing_enigmaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F56A427A81FF900FD4CFC /* glowing_enigmaApp.swift */; };
+		F88F56A727A81FF900FD4CFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F56A627A81FF900FD4CFC /* ContentView.swift */; };
+		F88F56A927A81FFB00FD4CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88F56A827A81FFB00FD4CFC /* Assets.xcassets */; };
+		F88F56AC27A81FFB00FD4CFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88F56AB27A81FFB00FD4CFC /* Preview Assets.xcassets */; };
+		F88F56B627A81FFB00FD4CFC /* glowing_enigmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F56B527A81FFB00FD4CFC /* glowing_enigmaTests.swift */; };
+		F88F56C027A81FFB00FD4CFC /* glowing_enigmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F56BF27A81FFB00FD4CFC /* glowing_enigmaUITests.swift */; };
+		F88F56C227A81FFB00FD4CFC /* glowing_enigmaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F56C127A81FFB00FD4CFC /* glowing_enigmaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F88F56B227A81FFB00FD4CFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F88F569927A81FF900FD4CFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F88F56A027A81FF900FD4CFC;
+			remoteInfo = "glowing-enigma";
+		};
+		F88F56BC27A81FFB00FD4CFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F88F569927A81FF900FD4CFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F88F56A027A81FF900FD4CFC;
+			remoteInfo = "glowing-enigma";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F88F56A127A81FF900FD4CFC /* glowing-enigma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "glowing-enigma.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F88F56A427A81FF900FD4CFC /* glowing_enigmaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glowing_enigmaApp.swift; sourceTree = "<group>"; };
+		F88F56A627A81FF900FD4CFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F88F56A827A81FFB00FD4CFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F88F56AB27A81FFB00FD4CFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F88F56B127A81FFB00FD4CFC /* glowing-enigmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "glowing-enigmaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F88F56B527A81FFB00FD4CFC /* glowing_enigmaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glowing_enigmaTests.swift; sourceTree = "<group>"; };
+		F88F56BB27A81FFB00FD4CFC /* glowing-enigmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "glowing-enigmaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F88F56BF27A81FFB00FD4CFC /* glowing_enigmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glowing_enigmaUITests.swift; sourceTree = "<group>"; };
+		F88F56C127A81FFB00FD4CFC /* glowing_enigmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glowing_enigmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F88F569E27A81FF900FD4CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88F56AE27A81FFB00FD4CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88F56B827A81FFB00FD4CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F88F569827A81FF900FD4CFC = {
+			isa = PBXGroup;
+			children = (
+				F88F56A327A81FF900FD4CFC /* glowing-enigma */,
+				F88F56B427A81FFB00FD4CFC /* glowing-enigmaTests */,
+				F88F56BE27A81FFB00FD4CFC /* glowing-enigmaUITests */,
+				F88F56A227A81FF900FD4CFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F88F56A227A81FF900FD4CFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F88F56A127A81FF900FD4CFC /* glowing-enigma.app */,
+				F88F56B127A81FFB00FD4CFC /* glowing-enigmaTests.xctest */,
+				F88F56BB27A81FFB00FD4CFC /* glowing-enigmaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F88F56A327A81FF900FD4CFC /* glowing-enigma */ = {
+			isa = PBXGroup;
+			children = (
+				F88F56A427A81FF900FD4CFC /* glowing_enigmaApp.swift */,
+				F88F56A627A81FF900FD4CFC /* ContentView.swift */,
+				F88F56A827A81FFB00FD4CFC /* Assets.xcassets */,
+				F88F56AA27A81FFB00FD4CFC /* Preview Content */,
+			);
+			path = "glowing-enigma";
+			sourceTree = "<group>";
+		};
+		F88F56AA27A81FFB00FD4CFC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F88F56AB27A81FFB00FD4CFC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F88F56B427A81FFB00FD4CFC /* glowing-enigmaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F88F56B527A81FFB00FD4CFC /* glowing_enigmaTests.swift */,
+			);
+			path = "glowing-enigmaTests";
+			sourceTree = "<group>";
+		};
+		F88F56BE27A81FFB00FD4CFC /* glowing-enigmaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F88F56BF27A81FFB00FD4CFC /* glowing_enigmaUITests.swift */,
+				F88F56C127A81FFB00FD4CFC /* glowing_enigmaUITestsLaunchTests.swift */,
+			);
+			path = "glowing-enigmaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F88F56A027A81FF900FD4CFC /* glowing-enigma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F88F56C527A81FFB00FD4CFC /* Build configuration list for PBXNativeTarget "glowing-enigma" */;
+			buildPhases = (
+				F88F569D27A81FF900FD4CFC /* Sources */,
+				F88F569E27A81FF900FD4CFC /* Frameworks */,
+				F88F569F27A81FF900FD4CFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "glowing-enigma";
+			productName = "glowing-enigma";
+			productReference = F88F56A127A81FF900FD4CFC /* glowing-enigma.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F88F56B027A81FFB00FD4CFC /* glowing-enigmaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F88F56C827A81FFB00FD4CFC /* Build configuration list for PBXNativeTarget "glowing-enigmaTests" */;
+			buildPhases = (
+				F88F56AD27A81FFB00FD4CFC /* Sources */,
+				F88F56AE27A81FFB00FD4CFC /* Frameworks */,
+				F88F56AF27A81FFB00FD4CFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F88F56B327A81FFB00FD4CFC /* PBXTargetDependency */,
+			);
+			name = "glowing-enigmaTests";
+			productName = "glowing-enigmaTests";
+			productReference = F88F56B127A81FFB00FD4CFC /* glowing-enigmaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F88F56BA27A81FFB00FD4CFC /* glowing-enigmaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F88F56CB27A81FFB00FD4CFC /* Build configuration list for PBXNativeTarget "glowing-enigmaUITests" */;
+			buildPhases = (
+				F88F56B727A81FFB00FD4CFC /* Sources */,
+				F88F56B827A81FFB00FD4CFC /* Frameworks */,
+				F88F56B927A81FFB00FD4CFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F88F56BD27A81FFB00FD4CFC /* PBXTargetDependency */,
+			);
+			name = "glowing-enigmaUITests";
+			productName = "glowing-enigmaUITests";
+			productReference = F88F56BB27A81FFB00FD4CFC /* glowing-enigmaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F88F569927A81FF900FD4CFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F88F56A027A81FF900FD4CFC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F88F56B027A81FFB00FD4CFC = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F88F56A027A81FF900FD4CFC;
+					};
+					F88F56BA27A81FFB00FD4CFC = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F88F56A027A81FF900FD4CFC;
+					};
+				};
+			};
+			buildConfigurationList = F88F569C27A81FF900FD4CFC /* Build configuration list for PBXProject "glowing-enigma" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F88F569827A81FF900FD4CFC;
+			productRefGroup = F88F56A227A81FF900FD4CFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F88F56A027A81FF900FD4CFC /* glowing-enigma */,
+				F88F56B027A81FFB00FD4CFC /* glowing-enigmaTests */,
+				F88F56BA27A81FFB00FD4CFC /* glowing-enigmaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F88F569F27A81FF900FD4CFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88F56AC27A81FFB00FD4CFC /* Preview Assets.xcassets in Resources */,
+				F88F56A927A81FFB00FD4CFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88F56AF27A81FFB00FD4CFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88F56B927A81FFB00FD4CFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F88F569D27A81FF900FD4CFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88F56A727A81FF900FD4CFC /* ContentView.swift in Sources */,
+				F88F56A527A81FF900FD4CFC /* glowing_enigmaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88F56AD27A81FFB00FD4CFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88F56B627A81FFB00FD4CFC /* glowing_enigmaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88F56B727A81FFB00FD4CFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88F56C027A81FFB00FD4CFC /* glowing_enigmaUITests.swift in Sources */,
+				F88F56C227A81FFB00FD4CFC /* glowing_enigmaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F88F56B327A81FFB00FD4CFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F88F56A027A81FF900FD4CFC /* glowing-enigma */;
+			targetProxy = F88F56B227A81FFB00FD4CFC /* PBXContainerItemProxy */;
+		};
+		F88F56BD27A81FFB00FD4CFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F88F56A027A81FF900FD4CFC /* glowing-enigma */;
+			targetProxy = F88F56BC27A81FFB00FD4CFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F88F56C327A81FFB00FD4CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F88F56C427A81FFB00FD4CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F88F56C627A81FFB00FD4CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"glowing-enigma/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "proj.glowing-enigma";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F88F56C727A81FFB00FD4CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"glowing-enigma/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "proj.glowing-enigma";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F88F56C927A81FFB00FD4CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "proj.glowing-enigmaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/glowing-enigma.app/glowing-enigma";
+			};
+			name = Debug;
+		};
+		F88F56CA27A81FFB00FD4CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "proj.glowing-enigmaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/glowing-enigma.app/glowing-enigma";
+			};
+			name = Release;
+		};
+		F88F56CC27A81FFB00FD4CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "proj.glowing-enigmaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "glowing-enigma";
+			};
+			name = Debug;
+		};
+		F88F56CD27A81FFB00FD4CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "proj.glowing-enigmaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "glowing-enigma";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F88F569C27A81FF900FD4CFC /* Build configuration list for PBXProject "glowing-enigma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F88F56C327A81FFB00FD4CFC /* Debug */,
+				F88F56C427A81FFB00FD4CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F88F56C527A81FFB00FD4CFC /* Build configuration list for PBXNativeTarget "glowing-enigma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F88F56C627A81FFB00FD4CFC /* Debug */,
+				F88F56C727A81FFB00FD4CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F88F56C827A81FFB00FD4CFC /* Build configuration list for PBXNativeTarget "glowing-enigmaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F88F56C927A81FFB00FD4CFC /* Debug */,
+				F88F56CA27A81FFB00FD4CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F88F56CB27A81FFB00FD4CFC /* Build configuration list for PBXNativeTarget "glowing-enigmaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F88F56CC27A81FFB00FD4CFC /* Debug */,
+				F88F56CD27A81FFB00FD4CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F88F569927A81FF900FD4CFC /* Project object */;
+}

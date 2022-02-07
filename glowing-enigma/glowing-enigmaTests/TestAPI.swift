@@ -10,6 +10,8 @@ import XCTest
 @testable import glowing_enigma
 
 class TestAPI: XCTestCase {
+    
+    let manager = API()
 
     override func setUpWithError() throws {
       
@@ -22,7 +24,7 @@ class TestAPI: XCTestCase {
   
     
     func testFuncGetScheduleListReturnParametersSuccessful() throws {
-        let manager = API()
+       
         
         manager.getScheduleList
             {
@@ -32,6 +34,43 @@ class TestAPI: XCTestCase {
         }
         
     }
+    
+    func testFuncGetEventLocationListReturnParametersSuccessful() throws {
+       
+        
+        manager.getEventLocationList()
+            {
+                 (error,response) in
+                XCTAssert(error.errorType == API.TypeError.Success)
+                XCTAssert(response != nil)
+        }
+        
+    }
+    
+    func testFuncGetTopics_ThemesListReturnParametersSuccessful() throws {
+      
+       
+        manager.getTopics_ThemesList()
+            {
+                 (error,response) in
+                XCTAssert(error.errorType == API.TypeError.Success)
+                XCTAssert(response != nil)
+        }
+        
+    }
+    
+    func testFuncGetSpeakersListReturnParametersSuccessful() throws {
+      
+       
+        manager.getSpeakersList()
+            {
+                 (error,response) in
+                XCTAssert(error.errorType == API.TypeError.Success)
+                XCTAssert(response != nil)
+        }
+        
+    }
+    
 
 }
     

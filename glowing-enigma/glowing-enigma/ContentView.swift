@@ -9,8 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+   @ObservedObject var listEvents = API()
+    
     var body: some View {
-        Text("Hello, World!")
+     
+        VStack{
+            if listEvents.parsed == true {
+                List(listEvents.records) { event in
+                    List(event.speakers) { speaker in
+                        Text(speaker.fields.name)
+                    
+                    }
+                }
+            }
+       Text("test")
+        }
     }
 }
 

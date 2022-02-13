@@ -17,13 +17,14 @@ struct ContentView: View {
         VStack{
             if listEvents.parsed == true {
                 List(listEvents.records) { event in
-                    List(event.speakers) { speaker in
-                        Text(speaker.fields.name)
-                    
-                    }
+                    Block(event: event)
                 }
             }
-       Text("test")
+            else{
+                 Text("Loading data ...")
+                 
+            }
+      
         }
     }
 }

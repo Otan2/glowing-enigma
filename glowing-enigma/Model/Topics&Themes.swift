@@ -13,7 +13,7 @@ struct ListTopics_Themes: Codable {
 }
 
 
-struct Topics_Themes: Codable {
+struct Topics_Themes: Codable,Identifiable {
     var id:String
     var fields:Fields
     

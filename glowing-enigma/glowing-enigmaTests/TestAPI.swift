@@ -12,7 +12,11 @@ import XCTest
 class TestAPI: XCTestCase {
     
     let manager = API()
-
+    var errorSchedule:API.TypeError?
+    var errorEventLocation:API.TypeError?
+    var errorTopics:API.TypeError?
+    var errorSpeaker:API.TypeError?
+    
     override func setUpWithError() throws {
       
     }
@@ -25,51 +29,82 @@ class TestAPI: XCTestCase {
     
     func testFuncGetScheduleListReturnParametersSuccessful() throws {
        
+        let expectation = XCTestExpectation(description: "Download Schedule")
         
-        manager.getScheduleList
-            {
-                 (error,response) in
-                XCTAssert(error.errorType == API.TypeError.Success)
-                XCTAssert(response != nil)
-        }
+       
+            self.manager.getScheduleList
+                {
+                     (error,response) in
+                   self.errorSchedule = error.errorType
+                    
+                     expectation.fulfill()
+            }
+        
+        wait(for: [expectation], timeout: 5.0)
+         XCTAssertEqual(self.errorSchedule, API.TypeError.Success)
         
     }
     
     func testFuncGetEventLocationListReturnParametersSuccessful() throws {
        
+        let expectation = XCTestExpectation(description: "Download Event Location")
         
-        manager.getEventLocationList()
+        self.manager.getEventLocationList()
             {
                  (error,response) in
-                XCTAssert(error.errorType == API.TypeError.Success)
-                XCTAssert(response != nil)
+             
+                self.errorEventLocation = error.errorType
+                
+                 expectation.fulfill()
+               
+              
         }
+        
+         wait(for: [expectation], timeout: 5.0)
+        
+        XCTAssertEqual(self.errorEventLocation, API.TypeError.Success)
+       
         
     }
     
     func testFuncGetTopics_ThemesListReturnParametersSuccessful() throws {
       
+        let expectation = XCTestExpectation(description: "Download Topics and Themes")
        
-        manager.getTopics_ThemesList()
+        self.manager.getTopics_ThemesList()
             {
                  (error,response) in
-                XCTAssert(error.errorType == API.TypeError.Success)
-                XCTAssert(response != nil)
+                 self.errorTopics = error.errorType
+                                   
+                                   
+                 expectation.fulfill()
         }
         
+        wait(for: [expectation], timeout: 5.0)
+         XCTAssertEqual(self.errorTopics, API.TypeError.Success)
     }
     
     func testFuncGetSpeakersListReturnParametersSuccessful() throws {
       
+        let expectation = XCTestExpectation(description: "Download Speakers")
        
-        manager.getSpeakersList()
+        self.manager.getSpeakersList()
             {
                  (error,response) in
-                XCTAssert(error.errorType == API.TypeError.Success)
-                XCTAssert(response != nil)
+                 self.errorSpeaker = error.errorType
+                                   
+                expectation.fulfill()
         }
         
+        wait(for: [expectation], timeout: 5.0)
+        XCTAssertEqual(self.errorSpeaker, API.TypeError.Success)
+        
     }
+    
+    
+  
+    
+   
     
 
 }

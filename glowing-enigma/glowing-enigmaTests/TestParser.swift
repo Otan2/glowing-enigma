@@ -35,18 +35,36 @@ class TestParser: XCTestCase {
         let result = self.parser.getLocationFromId(id: "id3")
         
         XCTAssertEqual( result?.fields?.name, "name")
+        
+        //With unkown id
+        
+        let result2 = self.parser.getSpeakersFromId(id: "null")
+               
+        XCTAssertEqual(result2?.fields.name, nil)
     }
     
     func testFuncFetTopics_ThemesFromIdReturn() throws {
         let result = self.parser.getTopics_ThemesFromId(id: "id4")
         
         XCTAssertEqual(result?.fields.theme, "theme")
+        
+        //With unkown id
+        
+        let result2 = self.parser.getSpeakersFromId(id: "null")
+               
+        XCTAssertEqual(result2?.fields.name, nil)
     }
     
     func testfuncGetSpeakersFromIdResult() throws {
         let result = self.parser.getSpeakersFromId(id: "id1")
         
         XCTAssertEqual(result?.fields.name, "NameSpeaker")
+        
+        //With unkown id
+        
+        let result2 = self.parser.getSpeakersFromId(id: "null")
+               
+        XCTAssertEqual(result2?.fields.name, nil)
         
     }
     

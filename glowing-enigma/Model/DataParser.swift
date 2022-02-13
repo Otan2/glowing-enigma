@@ -83,17 +83,50 @@ class Parser {
     
     
     func getLocationFromId(id: String) -> EventLocation? {
-        return self.listEventLocation?.records.filter { $0.id == id }[0]
+      
+         let result = self.listEventLocation?.records.filter { $0.id == id }
+            
+         if result?.count ?? 0 >= 1 {
+               return result![0]
+               
+           }
+           else{
+               return nil
+           }
         
     }
     
     func getTopics_ThemesFromId(id: String) -> Topics_Themes? {
-        return self.listTopics_Themes?.records.filter { $0.id == id }[0]
+        let result = self.listTopics_Themes?.records.filter { $0.id == id }
+        
+        if result?.count ?? 0 >= 1 {
+            return result![0]
+            
+        }
+        else{
+            return nil
+        }
     }
     
     func getSpeakersFromId(id: String) -> Speaker? {
-        return self.listSpeakers?.records.filter { $0.id == id }[0]
+        
+       let result = self.listSpeakers?.records.filter { $0.id == id }
+        
+        
+        if result?.count ?? 0 >= 1 {
+            return result![0]
+            
+        }
+        else{
+            return nil
+        }
     
     }
     
+}
+
+extension Collection where Indices.Iterator.Element == Index {
+    subscript (safe index: Index) -> Iterator.Element? {
+        return indices.contains(index) ? self[index] : nil
+    }
 }

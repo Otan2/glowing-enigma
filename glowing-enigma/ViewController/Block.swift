@@ -12,29 +12,28 @@ import SwiftUI
 struct Block: View {
     var event:Event
    
-    let newFormatter = ISO8601DateFormatter()
-    var dateFormatter = DateFormatter()
+    var dateHandler:DateHandler
     
 
     
     init(event:Event) {
         self.event = event
         
-        dateFormatter.dateFormat = "MMM d, h:mm a"
+        self.dateHandler = DateHandler(date: event.dateStart)
        
     }
     
     var body: some View {
+         
         VStack(alignment: .leading) {
             Text(self.event.activity)
-                 //.fontWeight(.bold)
                  .font(.system(size: 25))
                 .padding(10)
                     HStack {
                         Text(self.event.type)
                             .font(.subheadline)
                         Spacer()
-                        Text(self.dateFormatter.string(from: self.newFormatter.date(from: self.event.dateStart) ?? Date()) )
+                        Text(self.dateHandler.dateString )
                        
                        
                       
@@ -42,5 +41,7 @@ struct Block: View {
                 }
                 .padding()
 
+    
     }
+    
 }

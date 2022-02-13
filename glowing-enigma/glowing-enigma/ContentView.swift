@@ -13,19 +13,24 @@ struct ContentView: View {
    @ObservedObject var listEvents = API()
     
     var body: some View {
-     
+      NavigationView{
         VStack{
             if listEvents.parsed == true {
+               
                 List(listEvents.records) { event in
+                    NavigationLink(destination: Details(event: event)) {
                     Block(event: event)
+                    }
                 }
             }
             else{
                  Text("Loading data ...")
                  
             }
-      
         }
+        }
+        .navigationBarTitle(" Incomming events")
+
     }
 }
 

@@ -44,10 +44,10 @@ When loaded, the user can click on a block to display further information about 
 
 #### Iphone 11
 
-[iphone11](https://github.com/Otan2/glowing-enigma/blob/main/image/iphone11.png)
+![iphone11](https://github.com/Otan2/glowing-enigma/blob/main/image/iphone11.png)
 
 #### Iphone SE
 
-[iphoneSE](https://github.com/Otan2/glowing-enigma/blob/main/image/iphoneSE.png)
+![iphoneSE](https://github.com/Otan2/glowing-enigma/blob/main/image/iphoneSE.png)
 
 

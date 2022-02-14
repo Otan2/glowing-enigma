@@ -44,10 +44,10 @@ When loaded, the user can click on a block to display further information about 
 
 #### Iphone 11
 
-![Capture d’écran 2022-02-14 à 16.15.35.png](/Users/antoninboulnois/Documents/efrei/M2-S9/PFE/screenshoot/3189dbdd4d226b58708fd90e6d12612058b5b313.png)
+[iphone11](https://github.com/Otan2/glowing-enigma/blob/main/image/iphone11.png)
 
 #### Iphone SE
 
-![Capture d’écran 2022-02-14 à 16.17.15.png](/Users/antoninboulnois/Documents/efrei/M2-S9/PFE/screenshoot/b20c075d63f57172c9957a5f6894694b93979c56.png)
+[iphoneSE](https://github.com/Otan2/glowing-enigma/blob/main/image/iphoneSE.png)
 
 

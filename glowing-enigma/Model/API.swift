@@ -80,8 +80,10 @@ var listEventLocation:ListEventLocation?
                                                      }
                                                      else {
                                                          DispatchQueue.main.async {
-                                                             self.caughtError = true
-                                                             self.errorObject = error
+                                                              if (error.errorType != API.TypeError.Success){
+                                                                self.caughtError = true
+                                                                self.errorObject = error
+                                                            }
                                                         }
                                                      }
                                                                  
@@ -90,8 +92,10 @@ var listEventLocation:ListEventLocation?
                                       }
                                       else {
                                          DispatchQueue.main.async {
-                                              self.caughtError = true
-                                              self.errorObject = error
+                                              if (error.errorType != API.TypeError.Success){
+                                                 self.caughtError = true
+                                                 self.errorObject = error
+                                             }
                                         }
                                       }
                                                   
@@ -100,8 +104,12 @@ var listEventLocation:ListEventLocation?
                                }
                                else {
                                     DispatchQueue.main.async {
-                                       self.caughtError = true
-                                       self.errorObject = error
+                                        
+                                        if (error.errorType != API.TypeError.Success){
+                                            self.caughtError = true
+                                            self.errorObject = error
+                                        }
+                                       
                                 }
                                }
                                
@@ -112,8 +120,10 @@ var listEventLocation:ListEventLocation?
             }
             else {
                      DispatchQueue.main.async {
-                    self.caughtError = true
-                    self.errorObject = error
+                        if (error.errorType != API.TypeError.Success ){
+                       self.caughtError = true
+                       self.errorObject = error
+                   }
                 }
             }
             
@@ -126,8 +136,6 @@ var listEventLocation:ListEventLocation?
         
 
        
-         print(self.caughtError)
-
     }
     
 func createRequest(urlStr: String,method: String) -> URLRequest {
@@ -151,7 +159,9 @@ func createRequest(urlStr: String,method: String) -> URLRequest {
                    let list = try? JSONDecoder().decode(ListSchedule.self, from: data)
                    callback((TypeError.Success,"nil"),list)
                }
+               else{
                callback((TypeError.ErrorHttpResponce,String(responseHttp!.statusCode)),nil)
+            }
            }
            else{
            callback((TypeError.Error,error.debugDescription),nil)
@@ -171,7 +181,9 @@ func createRequest(urlStr: String,method: String) -> URLRequest {
                       let list = try? JSONDecoder().decode(ListEventLocation.self, from: data)
                       callback((TypeError.Success,"nil"),list)
                   }
+                  else{
                   callback((TypeError.ErrorHttpResponce,String(responseHttp!.statusCode)),nil)
+                }
               }
               else{
               callback((TypeError.Error,error.debugDescription),nil)
@@ -191,7 +203,9 @@ func createRequest(urlStr: String,method: String) -> URLRequest {
                          let list = try? JSONDecoder().decode(ListTopics_Themes.self, from: data)
                          callback((TypeError.Success,"nil"),list)
                      }
+                     else{
                      callback((TypeError.ErrorHttpResponce,String(responseHttp!.statusCode)),nil)
+                    }
                  }
                  else{
                  callback((TypeError.Error,error.debugDescription),nil)
@@ -211,7 +225,9 @@ func createRequest(urlStr: String,method: String) -> URLRequest {
                         let list = try? JSONDecoder().decode(ListSpeakers.self, from: data)
                         callback((TypeError.Success,"nil"),list)
                     }
+                    else{
                     callback((TypeError.ErrorHttpResponce,String(responseHttp!.statusCode)),nil)
+                    }
                 }
                 else{
                 callback((TypeError.Error,error.debugDescription),nil)

@@ -35,12 +35,33 @@ struct Details: View {
             .padding(10)
                 
             HStack{
-                Text("From:" + self.dateHandlerStart.dateString)
+                Text("From: " + self.dateHandlerStart.dateString)
                 Spacer()
-                Text("To:" + self.dateHandlerEnd.dateString)
+                Text("To: " + self.dateHandlerEnd.dateString)
             }
-            Text("Theme(s) and Topic(s):")
+            
+            VStack{
+          Text("Speaker(s):")
                 .fontWeight(.bold)
+                .padding(10)
+                
+           
+            
+           if (self.event.speakers.count > 1){
+              List(self.event.speakers) {
+                   speaker in
+                  Text(speaker.fields.name)
+                  }
+          }
+           else if (self.event.speakers.count != 0){
+              Text(self.event.speakers[0].fields.name)
+          }
+           else {
+                Text("no information about the speaker(s)...")
+                }
+            
+            Text("Theme(s) and Topic(s):")
+            .fontWeight(.bold)
             .padding(10)
               
             if (self.event.topics_themes.count > 1){
@@ -56,11 +77,16 @@ struct Details: View {
             else {
                 Text("no information about the topic...")
             }
-            Text("Notes from speaker(s):")
-                .fontWeight(.bold)
-            .padding(10)
+            
+            
+             if (self.event.notes != ""){
+                Text("Notes from speaker(s):")
+                    .fontWeight(.bold)
+                .padding(10)
              
-            Text(self.event.notes)
+                Text(self.event.notes)
+                .padding(10)
+            }
             Text("Location:")
                 .fontWeight(.bold)
             .padding(10)
@@ -69,7 +95,8 @@ struct Details: View {
             Text(self.event.location?.fields?.name ?? "")
              .frame(alignment: .leading)
                 
-            
+            Spacer()
+            }
         }
         
     }

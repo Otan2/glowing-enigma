@@ -1,5 +1,5 @@
 # glowing-enigma
-
+by Rodophe Cailbault and Antonin Boulnois
 
 
 ### Model
@@ -25,7 +25,7 @@ The ViewController is composed of 3 parts:
 - DetailsView
 
 
-A `DataHandler`class is set in the Helper folder to help formating data.
+A `DataHandler` class is set in the Helper folder to help formating data.
 
 ### Workflow
 

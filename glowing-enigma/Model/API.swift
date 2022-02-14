@@ -13,6 +13,7 @@ class API:ObservableObject {
 @Published var parsed:Bool = false
 @Published var records:[Event] = []
 @Published var caughtError:Bool = false
+@Published var errorObject:(errorType: TypeError?, errorMessage: String?)?
 var listSchedule:ListSchedule?
 
 var listSpeakers:ListSpeakers?
@@ -24,10 +25,19 @@ var listEventLocation:ListEventLocation?
     
     
     
-enum TypeError {
+    enum TypeError {
         case Success
         case Error
         case ErrorHttpResponce
+        
+        var toString : String {
+          switch self {
+        
+          case .Success: return "Success"
+          case .Error: return "Error"
+          case .ErrorHttpResponce: return "ErrorHttpResponce"
+          }
+        }
 }
     
     init(){
@@ -71,6 +81,7 @@ enum TypeError {
                                                      else {
                                                          DispatchQueue.main.async {
                                                              self.caughtError = true
+                                                             self.errorObject = error
                                                         }
                                                      }
                                                                  
@@ -80,6 +91,7 @@ enum TypeError {
                                       else {
                                          DispatchQueue.main.async {
                                               self.caughtError = true
+                                              self.errorObject = error
                                         }
                                       }
                                                   
@@ -89,6 +101,7 @@ enum TypeError {
                                else {
                                     DispatchQueue.main.async {
                                        self.caughtError = true
+                                       self.errorObject = error
                                 }
                                }
                                
@@ -100,6 +113,7 @@ enum TypeError {
             else {
                      DispatchQueue.main.async {
                     self.caughtError = true
+                    self.errorObject = error
                 }
             }
             

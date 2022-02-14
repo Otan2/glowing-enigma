@@ -18,6 +18,8 @@ class Parser {
     
     var events:[Event]
     
+  
+    
     init(listSchedule:ListSchedule?, listSpeakers:ListSpeakers?, listTopics_Themes:ListTopics_Themes?,listEventLocation:ListEventLocation?){
         
         self.listSchedule = listSchedule

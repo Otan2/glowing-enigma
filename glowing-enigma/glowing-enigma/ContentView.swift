@@ -23,7 +23,14 @@ struct ContentView: View {
                     }
                 }
             }
-            else{
+            else if listEvents.caughtError == true {
+                Text("Error While fetching data")
+               
+                Text("ErrorStatus: \(listEvents.errorObject?.errorType?.toString ?? " ")")
+                Text("ErrorMessage: \(listEvents.errorObject?.errorMessage ?? "" )")
+                
+            }
+            else {
                  Text("Loading data ...")
                  
             }

@@ -11,27 +11,40 @@ import SwiftUI
 
 class DateHandler {
     var dateISO:String
-    let newFormatter = ISO8601DateFormatter()
     var dateFormatter = DateFormatter()
-    
-    var dateDate:Date = Date()
+    let isoDateFormatter = ISO8601DateFormatter()
+    var dateDate:Date?
     var dateString:String = ""
     
     init(date:String){
         self.dateISO = date
-         dateFormatter.dateFormat = "MMM d, h:mm a"
+        dateFormatter.dateFormat = "MMM d, h:mm a"
+        
+        
+        isoDateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+        isoDateFormatter.formatOptions = [
+            .withFullDate,
+            .withFullTime,
+            .withDashSeparatorInDate,
+            .withFractionalSeconds]
+        
+        
         
         self.ISO8601toDate()
+       
         self.DatetoString()
     }
   
     
     func ISO8601toDate()  {
-        self.dateDate = self.newFormatter.date(from: self.dateISO) ?? Date()
+        self.dateDate = self.isoDateFormatter.date(from: self.dateISO)
     }
     
     func DatetoString() {
-        self.dateString =  self.dateFormatter.string(from: self.dateDate)
+        if let unwrapped = self.dateDate {
+        self.dateString =  self.dateFormatter.string(from: unwrapped)
+        }
+       
     }
     
   

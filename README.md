@@ -1,6 +1,6 @@
 # glowing-enigma
-by Rodophe Cailbault and Antonin Boulnois
 
+by Rodophe Cailbault and Antonin Boulnois
 
 ### Model
 
@@ -12,8 +12,6 @@ The model is composed of 3 parts:
 
 - Parser class
 
-
-
 ### ViewController
 
 The ViewController is composed of 3 parts:
@@ -24,7 +22,6 @@ The ViewController is composed of 3 parts:
 
 - DetailsView
 
-
 A `DataHandler` class is set in the Helper folder to help formating data.
 
 ### Workflow
@@ -33,7 +30,6 @@ At launch, the app fetchs the API through the `API` class to get all the data. 4
 The main view waits for the data to be loaded or the API class to return an error. 
 When loaded, the user can click on a block to display further information about the event.
 
-
 ### Features
 
 - Fetch all the data of the events
@@ -41,5 +37,17 @@ When loaded, the user can click on a block to display further information about 
 - Display list of events
 - Display details of an event
 - Unit tests on API and Parser class
+
+
+
+### Layout
+
+#### Iphone 11
+
+![Capture d’écran 2022-02-14 à 16.15.35.png](/Users/antoninboulnois/Documents/efrei/M2-S9/PFE/screenshoot/3189dbdd4d226b58708fd90e6d12612058b5b313.png)
+
+#### Iphone SE
+
+![Capture d’écran 2022-02-14 à 16.17.15.png](/Users/antoninboulnois/Documents/efrei/M2-S9/PFE/screenshoot/b20c075d63f57172c9957a5f6894694b93979c56.png)
 
 
